@@ -1,4 +1,4 @@
-## This function demonstrates how to cache potentially time-consuming computations in R.
+## The following code demonstrates how to cache potentially time-consuming computations in R.
 ## This specific example shows how to do this for computing the inverse of a matrix.
 ## If the contents of a matrix are not changing, it may make sense to cache the value
 ## of the inverse so that when we need it again, it can be looked up in the cache 
@@ -35,7 +35,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## the  setinverse  function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+    ## Return a matrix that is the inverse of 'x'
     inverse <- x$getInverse()
     if(!is.null(inverse)) {
         message("getting cached data")
